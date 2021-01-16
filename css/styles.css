@@ -74,6 +74,62 @@
   left: 0;
 }
 
+.header__inner-menu-list-item-link-modal {
+  text-decoration: none;
+  color: white;
+  font-family: "Overpass";
+  position: relative;
+  display: block;
+}
+
+.header__inner-menu-list-item-link-modal::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.header__inner-menu-list-item-link-modal:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.header__inner-menu-list-item-link-modal-window {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #61cab8;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.header__inner-menu-list-item-link-modal-name, .header__inner-menu-list-item-link-modal-surname {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.header__inner-menu-list-item-link-modal-btn-send, .header__inner-menu-list-item-link-modal-btn-cancel {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
 .header__inner-menu-list-item::after {
   content: "";
   margin-left: 40px;

@@ -10,6 +10,7 @@
     margin:0 auto;
 }
 
+
 .header {
     background-color: rgb(239, 239, 239);
     padding-top:40px;
@@ -72,6 +73,64 @@
                         &:hover::after {
                             width:100%;
                             left:0;
+                        }
+
+                        &-modal {
+                            text-decoration: none;
+                            color:white;
+                            font-family: $font;
+                            position:relative;
+                            display: block;
+                            &::after {
+                                background: none repeat scroll 0 0 transparent;
+                                bottom: 0;
+                                content: "";
+                                display: block;
+                                height: 2px;
+                                left: 50%;
+                                position: absolute;
+                                background: #fff;
+                                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                                width: 0;
+                            }
+    
+                            &:hover::after {
+                                width:100%;
+                                left:0;
+                            }
+
+                            &-window {
+                                position: fixed;
+                                left: 50%;
+                                top: 50%;
+                            
+                                transform: translate(-50%, -50%);
+                                background-color: rgb(97, 202, 184);
+                                padding: 10px;
+                                border-radius: 10px;
+                            }
+
+                            &-name,
+                            &-surname {
+                                display: block;
+                                font-size: 18px;
+                                margin-bottom: 10px;
+                                padding: 5px;
+                                border-radius: 5px;
+                                border: none;
+                                outline: none;
+                            }
+
+                            &-btn-send,
+                            &-btn-cancel {
+                                display: block;
+                                font-size: 18px;
+                                margin-bottom: 10px;
+                                padding: 5px;
+                                border-radius: 5px;
+                                border: none;
+                                outline: none;
+                            }
                         }
                         
                     }
