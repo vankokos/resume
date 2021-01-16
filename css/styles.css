@@ -495,7 +495,8 @@
     flex-direction: column;
   }
   .box p {
-    width: 190px;
+    width: 200px;
+    margin-bottom: 30px;
   }
 }
 
