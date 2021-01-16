@@ -541,17 +541,14 @@
   }
   .about__inner-bottom {
     display: flex;
-    align-items: center;
   }
   .charts {
-    flex-direction: column;
+    flex-direction: row;
   }
   .box {
     display: flex;
-    flex-direction: column;
   }
   .box p {
-    width: 200px;
     margin-bottom: 30px;
   }
 }

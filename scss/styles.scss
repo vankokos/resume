@@ -596,22 +596,21 @@
 
             &-bottom {
                 display: flex;
-                align-items: center;
+                // align-items: center;
             }
         }
     }
 
     .charts {
-        flex-direction: column;
+        flex-direction: row;
     }
 
 
     .box {
      display: flex;
-     flex-direction: column;
-
+    //  flex-direction: column;
+    
      p {
-        width:200px;
         margin-bottom: 30px;
      }
     }
