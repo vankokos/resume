@@ -507,6 +507,12 @@
     width: 800px;
     margin: 0 auto;
   }
+  .grid__inner {
+    display: inline-grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
   .header__inner {
     display: flex;
     flex-direction: column;
