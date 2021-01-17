@@ -502,6 +502,71 @@
     }
 }
 
+.modalbox {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -175px;
+    margin-left: -200px;
+    background-color: rgb(205, 205, 205);
+    padding: 20px;
+    border-radius: 10px;
+    width:350px;
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+
+    &__input-name,
+    &__input-email {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 10px;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+
+    }
+
+    &__btn-send,
+    &__btn-cancel {
+        padding: 5px 10px;
+        border: none;
+        outline: none;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        width:350px;
+        margin-bottom: 10px;
+        
+        &:hover {
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    &__btn-send {
+        background-color: rgb(99, 11, 166);
+        margin-right: 10px;
+        transition:0.2s;
+        border-radius:5px;
+
+        &:hover {
+            background-color: rgb(62, 14, 120);
+            transition:0.4s
+        }
+    }
+
+    &__btn-cancel {
+        background-color: rgb(205, 9, 36);
+        border-radius:5px;
+        &:hover {
+            color: rgb(255, 255, 255);
+            background-color: rgb(231, 70, 92);
+        }
+    }
+}
+
 @media (max-width:1100px) {
     .container {
         width:800px;
@@ -511,8 +576,8 @@
     .grid {
         &__inner {
             display: inline-grid;
-            grid-template-rows: repeat(4, 1fr);
-            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap:30px;
         }
     }
@@ -667,6 +732,15 @@
 @media (max-width:700px) {
     .container {
         width:400px;
+    }
+
+    .grid {
+        &__inner {
+            display: inline-grid;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: repeat(1, 1fr);
+            gap:30px;
+        }
     }
 
     .header {

@@ -502,6 +502,68 @@
   padding-top: 140px;
 }
 
+.modalbox {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -175px;
+  margin-left: -200px;
+  background-color: #cdcdcd;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modalbox__input-name, .modalbox__input-email {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.modalbox__btn-send, .modalbox__btn-cancel {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  width: 350px;
+  margin-bottom: 10px;
+}
+
+.modalbox__btn-send:hover, .modalbox__btn-cancel:hover {
+  color: white;
+}
+
+.modalbox__btn-send {
+  background-color: #630ba6;
+  margin-right: 10px;
+  transition: 0.2s;
+  border-radius: 5px;
+}
+
+.modalbox__btn-send:hover {
+  background-color: #3e0e78;
+  transition: 0.4s;
+}
+
+.modalbox__btn-cancel {
+  background-color: #cd0924;
+  border-radius: 5px;
+}
+
+.modalbox__btn-cancel:hover {
+  color: white;
+  background-color: #e7465c;
+}
+
 @media (max-width: 1100px) {
   .container {
     width: 800px;
@@ -509,8 +571,8 @@
   }
   .grid__inner {
     display: inline-grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
   .header__inner {
@@ -616,6 +678,12 @@
 @media (max-width: 700px) {
   .container {
     width: 400px;
+  }
+  .grid__inner {
+    display: inline-grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
   }
   .header__inner-name {
     font-size: 40px;
